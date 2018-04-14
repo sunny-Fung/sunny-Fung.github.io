@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=6.1.0" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.1.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.1.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.1.0">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=6.1.0" color="#222">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '6.1.0',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="不间断更新的H5日常编码解码器随着音频和视频在Web上的迅速流行，大多数提供富媒体内容的站点为了保证跨浏览器兼容性，不得不选择使用Flash。HTML5新增了两个与媒体相关的标签，让开发人员不必依赖任何插件就能在网页中嵌入跨浏览器的音频和视频内容。这两个标签就是 audio 和 video，它们除了能让开发人员方便地嵌入媒体文件之外，都提供了用于实现常用功能的JavaScript API，允许为媒">
+<meta name="keywords" content="HTML5">
+<meta property="og:type" content="article">
+<meta property="og:title" content="不间断更新的H5日常">
+<meta property="og:url" content="http://yoursite.com/2018/04/14/不间断更新的H5日常/index.html">
+<meta property="og:site_name" content="sunny">
+<meta property="og:description" content="不间断更新的H5日常编码解码器随着音频和视频在Web上的迅速流行，大多数提供富媒体内容的站点为了保证跨浏览器兼容性，不得不选择使用Flash。HTML5新增了两个与媒体相关的标签，让开发人员不必依赖任何插件就能在网页中嵌入跨浏览器的音频和视频内容。这两个标签就是 audio 和 video，它们除了能让开发人员方便地嵌入媒体文件之外，都提供了用于实现常用功能的JavaScript API，允许为媒">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-04-14T11:22:13.988Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="不间断更新的H5日常">
+<meta name="twitter:description" content="不间断更新的H5日常编码解码器随着音频和视频在Web上的迅速流行，大多数提供富媒体内容的站点为了保证跨浏览器兼容性，不得不选择使用Flash。HTML5新增了两个与媒体相关的标签，让开发人员不必依赖任何插件就能在网页中嵌入跨浏览器的音频和视频内容。这两个标签就是 audio 和 video，它们除了能让开发人员方便地嵌入媒体文件之外，都提供了用于实现常用功能的JavaScript API，允许为媒">
+
+
+
+  <link rel="alternate" href="/atom.xml" title="sunny" type="application/atom+xml" />
+
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2018/04/14/不间断更新的H5日常/"/>
+
+
+
+<script type="text/javascript" id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>不间断更新的H5日常 | sunny</title>
+  
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="default">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">sunny</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="accessibility.nav_toggle">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+          
+  
+  <li class="menu-item menu-item-home">
+    <a href="/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-home"></i> <br />home</a>
+</li>
+
+      
+        
+        
+          
+  
+  <li class="menu-item menu-item-archives">
+    <a href="/archives/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />archives</a>
+</li>
+
+      
+
+      
+      
+    </ul>
+  
+
+  
+    
+
+  
+
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/04/14/不间断更新的H5日常/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Sunny Fung">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="sunny">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">不间断更新的H5日常</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">post.posted</span>
+              
+              <time title="post.created" itemprop="dateCreated datePublished" datetime="2018-04-14T11:04:42+08:00">2018-04-14</time>
+            
+
+            
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="不间断更新的H5日常"><a href="#不间断更新的H5日常" class="headerlink" title="不间断更新的H5日常"></a>不间断更新的H5日常</h1><h2 id="编码解码器"><a href="#编码解码器" class="headerlink" title="编码解码器"></a>编码解码器</h2><p>随着音频和视频在Web上的迅速流行，大多数提供富媒体内容的站点为了保证跨浏览器兼容性，不得不选择使用Flash。HTML5新增了两个与媒体相关的标签，让开发人员不必依赖任何插件就能在网页中嵌入跨浏览器的音频和视频内容。<br>这两个标签就是 audio 和 video，它们除了能让开发人员方便地嵌入媒体文件之外，都提供了用于实现常用功能的JavaScript API，允许为媒体创建自定义的控件。这两个元素的用法如下：<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 嵌入视频 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">video</span> <span class="attr">src</span>=<span class="string">"conference.mpg"</span> <span class="attr">id</span>=<span class="string">"myVideo"</span>&gt;</span>Video player not available.<span class="tag">&lt;/<span class="name">video</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- 嵌入音频 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">audio</span> <span class="attr">src</span>=<span class="string">"song.mp3"</span> <span class="attr">id</span>=<span class="string">"myAudio"</span>&gt;</span>Audio player not available.<span class="tag">&lt;/<span class="name">audio</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>因为并非所有浏览器都支持所有媒体格式，所以可以指定多个不同的媒体来源。为此，不用在标签中指定src属性，而是使用一或多个 source 元素。<br><a id="more"></a><br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 嵌入视频 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">video</span> <span class="attr">id</span>=<span class="string">"myVideo"</span>&gt;</span></span><br><span class="line"> <span class="tag">&lt;<span class="name">source</span> <span class="attr">src</span>=<span class="string">"conference.webm"</span> <span class="attr">type</span>=<span class="string">"video/webm; codecs='vp8， vorbis'"</span>&gt;</span></span><br><span class="line"> <span class="tag">&lt;<span class="name">source</span> <span class="attr">src</span>=<span class="string">"conference.ogv"</span> <span class="attr">type</span>=<span class="string">"video/ogv; codecs='theora， vorbis'"</span>&gt;</span></span><br><span class="line"> <span class="tag">&lt;<span class="name">source</span> <span class="attr">src</span>=<span class="string">"conference.mpg"</span>&gt;</span></span><br><span class="line"> Video player not available.</span><br><span class="line"><span class="tag">&lt;/<span class="name">video</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- 嵌入音频 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">audio</span> <span class="attr">id</span>=<span class="string">"myAudio"</span>&gt;</span></span><br><span class="line"> <span class="tag">&lt;<span class="name">source</span> <span class="attr">src</span>=<span class="string">"song.ogg"</span> <span class="attr">type</span>=<span class="string">"audio/ogg"</span>&gt;</span></span><br><span class="line"> <span class="tag">&lt;<span class="name">source</span> <span class="attr">src</span>=<span class="string">"song.mp3"</span> <span class="attr">type</span>=<span class="string">"audio/mpeg"</span>&gt;</span></span><br><span class="line"> Audio player not available.</span><br><span class="line"><span class="tag">&lt;/<span class="name">audio</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>在JavaScript API中能够检测浏览器是否支持某种格式和编解码器。这两个媒体元素都有一个canPlayType()方法，该方法接收一种格式/编解码器字符串，返回”probably”、”maybe”或者””(空字符串)。空字符串是假值，而”probably”和”maybe”都是真值，所以if条件测试中可以转成true，所以在if中可以作为条件进行判断。<br>如果给canPlayType()传入了一种MIME类型，则返回值很可能是”maybe”或者空字符串。这是因为媒体文件本身只不过是音频或者视频的一个容器，真正决定文件能否播放的还是编码格式。在同时传入MIME类型和编码器的情况下，可能性就会增加，返回的字符串会变成”probably”。<br>以下以一个检查浏览器是否支持媒体的按钮来解释<br><figure class="highlight html"><figcaption><span>[checkButton] []</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"checkVideoResult"</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">button</span> <span class="attr">onclick</span>=<span class="string">"checkVideo()"</span>&gt;</span>check<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="javascript"><span class="function"><span class="keyword">function</span> <span class="title">checkVideo</span>(<span class="params"></span>)</span>&#123;</span></span><br><span class="line"><span class="javascript">    <span class="keyword">if</span>(!!<span class="built_in">document</span>.createElement(<span class="string">'video'</span>).canPlayType)&#123;</span></span><br><span class="line"><span class="javascript">      <span class="keyword">var</span> vidTest=<span class="built_in">document</span>.createElement(<span class="string">"video"</span>);</span></span><br><span class="line"><span class="javascript">      oggTest=vidTest.canPlayType(<span class="string">'video/ogg; codecs="theora, vorbis"'</span>);</span></span><br><span class="line"><span class="javascript">      <span class="keyword">if</span> (!oggTest)&#123;</span></span><br><span class="line"><span class="javascript">        h264Test=vidTest.canPlayType(<span class="string">'video/mp4; codecs="avc1.42E01E, mp4a.40.2"'</span>);</span></span><br><span class="line"><span class="javascript">        <span class="keyword">if</span> (!h264Test)&#123;</span></span><br><span class="line"><span class="javascript">          <span class="built_in">document</span>.getElementById(<span class="string">"checkVideoResult"</span>).innerHTML=<span class="string">"Sorry. No video support."</span></span></span><br><span class="line"><span class="undefined">        &#125;</span></span><br><span class="line"><span class="javascript">        <span class="keyword">else</span>&#123;</span></span><br><span class="line"><span class="javascript">          <span class="keyword">if</span> (h264Test==<span class="string">"probably"</span>)&#123;</span></span><br><span class="line"><span class="javascript">            <span class="built_in">document</span>.getElementById(<span class="string">"checkVideoResult"</span>).innerHTML=<span class="string">"Yes! Full support!"</span>;</span></span><br><span class="line"><span class="undefined">          &#125;</span></span><br><span class="line"><span class="javascript">          <span class="keyword">else</span>&#123;</span></span><br><span class="line"><span class="javascript">            <span class="built_in">document</span>.getElementById(<span class="string">"checkVideoResult"</span>).innerHTML=<span class="string">"Well. Some support."</span>;</span></span><br><span class="line"><span class="undefined">          &#125;</span></span><br><span class="line"><span class="undefined">        &#125;</span></span><br><span class="line"><span class="undefined">      &#125;</span></span><br><span class="line"><span class="javascript">      <span class="keyword">else</span>&#123;</span></span><br><span class="line"><span class="javascript">        <span class="keyword">if</span> (oggTest==<span class="string">"probably"</span>)&#123;</span></span><br><span class="line"><span class="javascript">          <span class="built_in">document</span>.getElementById(<span class="string">"checkVideoResult"</span>).innerHTML=<span class="string">"Yes! Full support!"</span>;</span></span><br><span class="line"><span class="undefined">        &#125;</span></span><br><span class="line"><span class="javascript">        <span class="keyword">else</span>&#123;</span></span><br><span class="line"><span class="javascript">          <span class="built_in">document</span>.getElementById(<span class="string">"checkVideoResult"</span>).innerHTML=<span class="string">"Well. Some support."</span>;</span></span><br><span class="line"><span class="undefined">        &#125;</span></span><br><span class="line"><span class="undefined">      &#125;</span></span><br><span class="line"><span class="undefined">    &#125;</span></span><br><span class="line"><span class="javascript">    <span class="keyword">else</span>&#123;</span></span><br><span class="line"><span class="javascript">    <span class="built_in">document</span>.getElementById(<span class="string">"checkVideoResult"</span>).innerHTML=<span class="string">"Sorry. No video support."</span></span></span><br><span class="line"><span class="undefined">    &#125;</span></span><br><span class="line"><span class="undefined">  &#125;</span></span><br><span class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure><br>编解码器必须用引号引起来才行。下面就为大家介绍一下已经得到支持的音频格式和编解码器。<br>　　AAC格式：字符串audio/mp4，codecs=”mp4a.40.2”;支持的浏览器：IE9+、Safari 4+和iOS版Safari<br>　　MP3格式：字符串audio/mpeg;支持的浏览器：IE9+、Chrome<br>　　Vorbis格式：字符串audio/ogg，codecs=”vorbis”;支持的浏览器：Firefox 3.5+、Chrome、Opera 10.5+<br>　　WAV格式：字符串audio/wav，codecs=”1”;支持的浏览器：Firefox 3.5+、Opera 10.5+、Chrome<br>下面是用canPlayType()来检测视频格式编解码器。<br>　　H.264格式：字符串video/mp4，codecs=”avc1.42E01E，mp4a.40.2”;支持的浏览器：IE9+、Safari 4+、iOS版Safari、Android版Webkit<br>　　Theora：字符串video/ogg，codecs=”theora”;支持的浏览器：Firefox 3.5+、Opera 10.5+、Chrome<br>　　WebM：video/webm，codecs=”vp8，vorbis”;支持的浏览器：Firefox 4+、Opera 10.6+、Chrome</p>
+<h2 id="Web-Workers"><a href="#Web-Workers" class="headerlink" title="Web Workers"></a>Web Workers</h2><p>为了利用多核CPU的计算能力，HTML5提出Web Worker标准，允许JavaScript脚本创建多个线程，但是子线程完全受主线程控制，且不得操作DOM。web workers能解决两个问题：一、解决程序阻塞问题；二、提升效率。</p>
+<h3 id="任务队列"><a href="#任务队列" class="headerlink" title="任务队列"></a>任务队列</h3><p>单线程就意味着，所有任务需要排队，前一个任务结束，才会执行后一个任务。如果前一个任务耗时很长，后一个任务就不得不一直等着。<br>如果排队是因为计算量大，CPU忙不过来，倒也算了，但是很多时候CPU是闲着的，因为IO设备（输入输出设备）很慢（比如Ajax操作从网络读取数据），不得不等着结果出来，再往下执行。<br>JavaScript语言的设计者意识到，这时主线程完全可以不管IO设备，挂起处于等待中的任务，先运行排在后面的任务。等到IO设备返回了结果，再回过头，把挂起的任务继续执行下去。<br>于是，所有任务可以分成两种，一种是同步任务（synchronous），另一种是异步任务（asynchronous）。同步任务指的是，在主线程上排队执行的任务，只有前一个任务执行完毕，才能执行后一个任务；异步任务指的是，不进入主线程、而进入”任务队列”（task queue）的任务，只有”任务队列”通知主线程，某个异步任务可以执行了，该任务才会进入主线程执行。<br>具体来说，异步执行的运行机制如下。（同步执行也是如此，因为它可以被视为没有异步任务的异步执行。）<br>（1）所有同步任务都在主线程上执行，形成一个执行栈（execution context stack）。<br>（2）主线程之外，还存在一个”任务队列”（task queue）。只要异步任务有了运行结果，就在”任务队列”之中放置一个事件。<br>（3）一旦”执行栈”中的所有同步任务执行完毕，系统就会读取”任务队列”，看看里面有哪些事件。那些对应的异步任务，于是结束等待状态，进入执行栈，开始执行。<br>（4）主线程不断重复上面的第三步。</p>
+<h3 id="fibonacci测试效率"><a href="#fibonacci测试效率" class="headerlink" title="fibonacci测试效率"></a>fibonacci测试效率</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> start = (<span class="keyword">new</span> <span class="built_in">Date</span>()).getTime();</span><br><span class="line"><span class="keyword">var</span> fibonacci =<span class="function"><span class="keyword">function</span>(<span class="params">n</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> n&lt;<span class="number">2</span> ? n : <span class="built_in">arguments</span>.callee(n<span class="number">-1</span>) + <span class="built_in">arguments</span>.callee(n<span class="number">-2</span>);</span><br><span class="line">&#125;;</span><br><span class="line">fibonacci(<span class="number">38</span>);</span><br><span class="line"><span class="built_in">console</span>.log((<span class="keyword">new</span> <span class="built_in">Date</span>()).getTime() - start);</span><br></pre></td></tr></table></figure>
+<p>我们引入Web Worker，提升效率，缩短运算时差<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> start = (<span class="keyword">new</span> <span class="built_in">Date</span>()).getTime();</span><br><span class="line"></span><br><span class="line"><span class="comment">// 实例化一个worker实例，参数必须是一篇JavaScript脚本</span></span><br><span class="line"><span class="keyword">var</span> worker = <span class="keyword">new</span> Worker(<span class="string">'worker.js'</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 监听worker通信</span></span><br><span class="line">worker.addEventListener(<span class="string">'message'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">event</span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">'Worker result: '</span> + ((<span class="keyword">new</span> <span class="built_in">Date</span>()).getTime() - start));</span><br><span class="line">&#125;, <span class="literal">false</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 向worker post数据</span></span><br><span class="line">worker.postMessage(<span class="number">38</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> fibonacci =<span class="function"><span class="keyword">function</span>(<span class="params">n</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> n&lt;<span class="number">2</span> ? n : <span class="built_in">arguments</span>.callee(n<span class="number">-1</span>) + <span class="built_in">arguments</span>.callee(n<span class="number">-2</span>);</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 主页面仅剩一个，另外一个已经转移到worker里执行了</span></span><br><span class="line">setTimeout(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    fibonacci(<span class="number">38</span>);</span><br><span class="line">    <span class="built_in">console</span>.log((<span class="keyword">new</span> <span class="built_in">Date</span>()).getTime() - start);</span><br><span class="line">&#125;, <span class="number">100</span>);</span><br><span class="line"></span><br><span class="line">worker.js</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> fibonacci =<span class="function"><span class="keyword">function</span>(<span class="params">n</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> n&lt;<span class="number">2</span> ? n : <span class="built_in">arguments</span>.callee(n<span class="number">-1</span>) + <span class="built_in">arguments</span>.callee(n<span class="number">-2</span>);</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">self.addEventListener(<span class="string">'message'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">event</span>) </span>&#123;</span><br><span class="line">    self.postMessage(fibonacci(event.data))</span><br><span class="line">&#125;, <span class="literal">false</span>);</span><br></pre></td></tr></table></figure></p>
+<h3 id="封装"><a href="#封装" class="headerlink" title="封装"></a>封装</h3><p>但如果要连续执行好几个，可不能这样：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">worker.postMessage(<span class="number">38</span>);</span><br><span class="line">worker.postMessage(<span class="number">38</span>);</span><br><span class="line">worker.postMessage(<span class="number">38</span>);</span><br></pre></td></tr></table></figure></p>
+<p>因为只是new了一个Worker，所以它会顺序执行：<br>script.js:26 5369<br>script.js:9 Worker result: 5374<br>script.js:9 Worker result: 9960<br>script.js:9 Worker result: 14557<br>我们可以同时new多个<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> start = (<span class="keyword">new</span> <span class="built_in">Date</span>()).getTime();</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> fibonacci =<span class="function"><span class="keyword">function</span>(<span class="params">n</span>) </span>&#123;</span><br><span class="line">    <span class="comment">// 实例化一个worker实例，参数必须是一篇JavaScript脚本</span></span><br><span class="line">    <span class="keyword">var</span> worker = <span class="keyword">new</span> Worker(<span class="string">'worker.js'</span>);</span><br><span class="line">    <span class="comment">// 监听worker通信</span></span><br><span class="line">    worker.addEventListener(<span class="string">'message'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">event</span>) </span>&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">'Worker result: '</span> + ((<span class="keyword">new</span> <span class="built_in">Date</span>()).getTime() - start));</span><br><span class="line">    &#125;, <span class="literal">false</span>);</span><br><span class="line">    <span class="comment">// 向worker post数据</span></span><br><span class="line">    worker.postMessage(n);</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">fibonacci(<span class="number">38</span>);</span><br><span class="line">fibonacci(<span class="number">38</span>);</span><br><span class="line">fibonacci(<span class="number">38</span>);</span><br></pre></td></tr></table></figure></p>
+<p>执行结果：<br>Worker result: 7062<br>Worker result: 7068<br>Worker result: 7128</p>
+<p>执行4次的结果：<br>script.js:11 Worker result: 9323<br>script.js:11 Worker result: 9335<br>script.js:11 Worker result: 9340<br>script.js:11 Worker result: 9350<br>可见实例越多，单个执行效率就越高，因为new一个Worker也是需要耗费时间的，但即使这样也比在浏览器里阻塞顺序执行效率更高。</p>
+<h3 id="跨域与脚本引入"><a href="#跨域与脚本引入" class="headerlink" title="跨域与脚本引入"></a>跨域与脚本引入</h3><p>Worker在实例化的时候必须要传入一个脚本URL，而且必须是在本域下，否则会报跨域错误：<br>本域：<a href="http://localhost:63342/" target="_blank" rel="noopener">http://localhost:63342/</a><br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> worker = <span class="keyword">new</span> Worker(<span class="string">'http://localhost/worker.js'</span>);</span><br></pre></td></tr></table></figure></p>
+<p>报安全错误：<br>Uncaught SecurityError: Failed to construct ‘Worker’: Script at ‘<a href="http://localhost/worker.js&#39;" target="_blank" rel="noopener">http://localhost/worker.js&#39;</a> cannot be accessed from origin ‘<a href="http://localhost:63342&#39;" target="_blank" rel="noopener">http://localhost:63342&#39;</a>.<br>但可以在Worker里通过importScripts方法引入任何域下的脚本，就如同HTML里的script标签一样<br><a href="http://localhost/script.js" target="_blank" rel="noopener">http://localhost/script.js</a><br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(<span class="string">'Hello world! from http://localhost/script.js'</span>);</span><br></pre></td></tr></table></figure></p>
+<p>worker里引入它<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">self.importScripts(<span class="string">'http://localhost/script.js'</span>);</span><br></pre></td></tr></table></figure></p>
+<h3 id="调试与浏览器支持"><a href="#调试与浏览器支持" class="headerlink" title="调试与浏览器支持"></a>调试与浏览器支持</h3><p>chrome支持并非常方便调试</p>
+<h3 id="不足"><a href="#不足" class="headerlink" title="不足"></a>不足</h3><p>不能操作DOM<br>API非常少，以下是非常实用的几个API：<br>    1、XMLHttpRequest，有了它，才能发出Ajax请求<br>    2、setTimeout/setInterval，js最神奇的地方<br>    3、importScripts，在worker里载入外部js脚本<br>    4、addEventListener/postMessage，有了它们才能与主页互相通信</p>
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/HTML5/" rel="tag"># HTML5</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/04/01/Merge/" rel="next" title="归并排序">
+                <i class="fa fa-chevron-left"></i> 归并排序
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            sidebar.toc
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            sidebar.overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Sunny Fung</p>
+              <p class="site-description motion-element" itemprop="description">半只脚踏进了前端大坑的美少女</p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">3</span>
+                    <span class="site-state-item-name">state.posts</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  
+                    
+                    
+                      
+                    
+                    <span class="site-state-item-count">1</span>
+                    <span class="site-state-item-name">state.categories</span>
+                  
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  
+                    
+                    
+                      
+                    
+                    <span class="site-state-item-count">1</span>
+                    <span class="site-state-item-name">state.tags</span>
+                  
+                </div>
+              
+            </nav>
+          
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#不间断更新的H5日常"><span class="nav-number">1.</span> <span class="nav-text">不间断更新的H5日常</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#编码解码器"><span class="nav-number">1.1.</span> <span class="nav-text">编码解码器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Web-Workers"><span class="nav-number">1.2.</span> <span class="nav-text">Web Workers</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#任务队列"><span class="nav-number">1.2.1.</span> <span class="nav-text">任务队列</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#fibonacci测试效率"><span class="nav-number">1.2.2.</span> <span class="nav-text">fibonacci测试效率</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#封装"><span class="nav-number">1.2.3.</span> <span class="nav-text">封装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#跨域与脚本引入"><span class="nav-number">1.2.4.</span> <span class="nav-text">跨域与脚本引入</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#调试与浏览器支持"><span class="nav-number">1.2.5.</span> <span class="nav-text">调试与浏览器支持</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#不足"><span class="nav-number">1.2.6.</span> <span class="nav-text">不足</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Sunny Fung</span>
+
+  
+
+  
+</div>
+
+
+
+
+  <div class="powered-by">footer.powered v3.7.0</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">footer.theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/theme-next/hexo-theme-next">NexT.Muse</a> v6.1.0</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.1.0"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.1.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.1.0"></script>
+
+
+
+  
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
